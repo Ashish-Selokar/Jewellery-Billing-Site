@@ -1,0 +1,231 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+/* Header */
+.main-header {
+    background-color: #8e44ad;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin: 0 1rem;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #f1c40f;
+}
+
+.navbar i {
+    margin: 5px;
+}
+
+
+
+/* Form Container */
+.form-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 100px;
+}
+
+/* Input Fields */
+input[type="text"], input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.big-box0 input[type="text"]{
+    width: 130%;
+}
+
+.big-item{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.big-item h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.big-item button{
+    margin: 10px;
+}
+
+.big-info{
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.big-info h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+ 
+}
+.button-container {
+    display: flex;            /* Places buttons in a row */
+    justify-content: center;  /* Centers them horizontally */
+    gap: 20px;                /* Adds space between buttons */
+    margin-top: 20px;         /* Adjust spacing from the top */
+    margin-bottom: 50px;
+}
+
+.small-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+
+.box {
+    border-radius: 5px;
+    padding: 20px;
+    width: 30%;
+}
+
+h3 {
+    color: #a50000;   /* Change header color */
+    border-bottom: 2px solid #e0e0e0; 
+    padding-bottom: 10px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.big-box0 input{
+    height: 80px;
+    width: auto;
+}
+
+
+/* Buttons */
+button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+input[type="text"], input[type="number"] {
+    width: 90%;
+    padding: 5px;
+    margin: 4px 0;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Reminder */
+.reminder {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #ffeb3b;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Time Period Section */
+.time-period {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+
+.loanForm {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; /* Space between columns */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}

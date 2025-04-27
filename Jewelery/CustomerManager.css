@@ -1,0 +1,350 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffcc99, #8e44ad);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+
+}
+
+.main-header {
+    background-color: #8e44ad;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 98%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin: 0 1rem;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #f1c40f;
+}
+
+.navbar i {
+    margin: 5px;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 100px;
+
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.form-group div {
+    flex: 1 1 calc(33.33% - 10px);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    padding-left: 30px;
+}
+
+.form-group i {
+    position: absolute;
+    left: 10px;
+    color: #555;
+}
+
+.gender {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 400px;
+}
+
+.icons i {
+    font-size: 20px;
+    cursor: pointer;
+    /* margin-left: 350px; */
+}
+
+#Gender {
+    width: 30%;
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.gender {
+    flex: 0 0 70px;
+    /* Set a fixed width */
+}
+
+#Gender {
+    width: 60px;
+    /* Makes sure dropdown fills the div */
+    height: 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+
+
+.name-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    /* Adjust spacing */
+}
+
+select {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    /* border: 2px solid #8e44ad; */
+    border-radius: 5px;
+}
+
+.selected-country {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Search Bar - Fixed at the Top */
+.searchBar {
+    width: 60%;
+    padding: 15px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50px; /* Position it below the header */
+    z-index: 999;
+}
+
+/* Styling for Search Input */
+.searchBar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #8e44ad;
+    border-radius: 23px 23px 0 0;
+    outline: none;
+}
+
+
+
+/* Customer List */
+#customerList {
+    list-style: none;
+    padding: 0;
+}
+
+#customerList li {
+    background: #f8f9fa;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Customer Photo */
+.customer-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+/* Remove Button */
+.remove-button {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.remove-button:hover {
+    background-color: darkred;
+}
+
+
+/* Add Customer Button Styling */
+button {
+    width: 100%;
+    background: linear-gradient(135deg, #8e44ad, #f39c12);
+    /* Gradient effect */
+    color: white;
+    padding: 12px;
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #f39c12, #8e44ad);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    /* Slight enlargement on hover */
+}
+
+
+
+
+
+
+
+
+
+
+#customerTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#customerTable th, #customerTable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#customerTable th {
+    background-color: #8e44ad;
+    color: white;
+}
+
+.remove-button {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.remove-button:hover {
+    background-color: darkred;
+}
+
+
+
+/* Space the stored info below the form */
+.storedinfo {
+    width: 90%;
+    max-width: 900px;
+    margin-top: 800px; /* Space between form and table */
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+}
+
+/* Table Styling */
+#customerTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#customerTable th, #customerTable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+#customerTable th {
+    background-color: #8e44ad;
+    color: white;
+}
+
+/* Ensure Form and Table Stack Properly */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.storedinfo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+
+.operationButton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}

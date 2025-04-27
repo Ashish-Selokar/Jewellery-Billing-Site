@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(135deg, #ffcc99, #8e44ad);
+}
+
+header {
+    background-color: #8e44ad;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar i{
+    margin: 5px;
+}
+
+.navbar a:hover {    
+    text-decoration: underline;
+}
+
+
+.mainSection{
+    width: 100;
+}
+
+
+ /* Updated styles for .Gold-SilverStock */
+.Gold-SilverStock {
+    display: flex;
+    justify-content: space-between; /* h5 on left, buttons on right */
+    align-items: center;
+    width: auto;
+    padding: 5px 10px;
+    background: linear-gradient(135deg, #dab898, #c89edb);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+/* Wrap the buttons in a flex container */
+.button-container {
+    display: flex;   
+    gap: 10px; /* Reduce spacing between buttons */
+}
+
+/* Styling for the buttons */
+.Gold-SilverStock button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.Gold-SilverStock button:hover {
+    background-color: #0056b3;
+}
+
+
+.button-container button:first-child{
+    background-color: #D3AE36;
+    color: #846500;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.button-container button:last-child{
+    background-color: #2ae223;
+    color: #ffff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/* Search Container */
+.search-container {
+    text-align: center;
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    gap: 5px;
+
+}
+
+.search-container h5{
+    margin-top: 10px;
+}
+.search-container button {
+    border-radius: 5px;
+    margin: 0; /* Remove any default margin */
+    padding: 8px 12px; /* Adjust padding if needed */
+    border: none;
+    cursor: pointer;
+    width: fit-content; 
+    
+}   
+
+#searchBox {
+    width: 40%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Hide the list initially */
+.hidden {
+    display: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+ul li {
+    padding: 10px;
+    background: white;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Table */
+
+.table-container {
+    overflow-x: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #c89edb;
+    color: white;
+    cursor: pointer;
+}
+
+th:hover {
+    background-color: #b07ac8;
+}
+
+td {
+    text-align: center;
+}
+
+.highlight {
+    font-weight: bold;
+    color: red;
+}
+
+.total-row {
+    background-color: #f8d7da;
+    font-weight: bold;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Gold-SilverStock.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <!-- Header Section -->
+        <header class="main-header">
+            <div class="logo">Jewellery Haven</div>
+            <nav class="navbar">
+                <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+                <a href="AboutPage.html"><i class="fa-solid fa-circle-info"></i>About</a>
+                <a href="CollectionPage.html"><i class="fa-solid fa-users"></i>Collections</a>
+                <a href="Orders.html"><i class="fa-solid fa-truck-fast"></i>Orders</a>
+                <a href=""><i class="fa-solid fa-location-dot"></i> Location</a>
+                <a href="Report.html">Reports</a>
+                <a href="BillingPage.html"><i class="fa-solid fa-money-bill-1"></i>Proceed to Bill</a>
+                <a href=""><i class="fa-solid fa-address-card"></i></a>
+            </nav>
+        </header>
+
+        <div class="mainSection">
+            <div class="Gold-SilverStock">
+                <h4>Gold-Silver Stock</h4>
+                <div class="button-container">
+                    <button>All Gold-Silver Stock List</button>
+                    <button>Go Back</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="search-container">
+            <h5>Show Entries</h5>
+            <input type="text" id="searchBox" placeholder="Search for jewelry...">
+            <button>Copy</button>
+            <button>Csv</button>
+            <button>Excel</button>
+            <button>Json</button>
+            <button>Pdf</button>
+            <button>Print</button>
+            <button>Column Visibility</button>
+        </div>
+    
+    
+
+        <div class="table-container">
+            <table id="goldTable">
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0)">Firm Name</th>
+                        <th onclick="sortTable(1)">Metal Type</th>
+                        <th onclick="sortTable(2)">P.Code</th>
+                        <th onclick="sortTable(3)">Item Category</th>
+                        <th onclick="sortTable(4)">Item Name</th>
+                        <th onclick="sortTable(5)">QTY</th>
+                        <th onclick="sortTable(6)">Gross Weight</th>
+                        <th onclick="sortTable(7)">Less Weight</th>
+                        <th onclick="sortTable(8)">Packet Weight</th>
+                        <th onclick="sortTable(9)">Net Weight</th>
+                        <th onclick="sortTable(10)">W.Tag WT</th>
+                        <th onclick="sortTable(11)">KRT/PRTY %</th>
+                        <th onclick="sortTable(12)">AVG PRTY %</th>
+                        <th onclick="sortTable(13)">AVG Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>JJ</td>
+                        <td>Gold</td>
+                        <td>NCK23#</td>
+                        <td>RING</td>
+                        <td>RING L</td>
+                        <td class="highlight">95.000</td>
+                        <td class="highlight">2236.993</td>
+                        <td>0.00</td>
+                        <td>0.00</td>
+                        <td class="highlight">2236.763</td>
+                        <td>22</td>
+                        <td>92.00</td>
+                        <td>92.00</td>
+                        <td>73000.00</td>
+                    </tr>
+                    <tr>
+                        <td>JJ</td>
+                        <td>Gold</td>
+                        <td>rng4</td>
+                        <td>RING</td>
+                        <td>l ring</td>
+                        <td>10</td>
+                        <td>100.000</td>
+                        <td>0.00</td>
+                        <td>0.00</td>
+                        <td>100.000</td>
+                        <td>20</td>
+                        <td>82.00</td>
+                        <td>82.00</td>
+                        <td>73500.00</td>
+                    </tr>
+                    <tr>
+                        <td>JJ</td>
+                        <td>Gold</td>
+                        <td>ring11</td>
+                        <td>RING</td>
+                        <td>ring</td>
+                        <td>121</td>
+                        <td>243.570</td>
+                        <td>0.00</td>
+                        <td>0.00</td>
+                        <td>243.570</td>
+                        <td>22</td>
+                        <td>92.53</td>
+                        <td>92.53</td>
+                        <td>58506.24</td>
+                    </tr>
+                    <tr>
+                        <td>JJ</td>
+                        <td>Gold</td>
+                        <td>RNG17</td>
+                        <td>RING</td>
+                        <td>gring</td>
+                        <td>11</td>
+                        <td>70.356</td>
+                        <td>0.00</td>
+                        <td>0.00</td>
+                        <td>70.356</td>
+                        <td>20</td>
+                        <td>92.00</td>
+                        <td>92.00</td>
+                        <td>77863.49</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+
+        
+
+<script src="Gold-SilverStock.js"></script>
+</body>
+</html>

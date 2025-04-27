@@ -1,0 +1,122 @@
+/* Global Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease;
+}
+
+/* Body Styling */
+body {
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+/* Main Container */
+.support-container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Headings */
+h1, h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* FAQ Section */
+.faq-section {
+    margin-bottom: 30px;
+}
+
+.faq {
+    background: #f4f4f4;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.faq:hover {
+    background: #ddd;
+    transform: scale(1.02);
+}
+
+.question {
+    font-weight: bold;
+    color: #333;
+}
+
+.answer {
+    display: none;
+    padding-top: 10px;
+    color: #555;
+    animation: slideIn 0.3s ease-in-out;
+}
+
+/* Contact Form */
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #8e44ad;
+    border-radius: 5px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #732d91;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(142, 68, 173, 0.5);
+}
+
+/* Button Effects */
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    background: #8e44ad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #732d91;
+    transform: scale(1.05);
+}
+
+/* Chat Box */
+.chat-box {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 280px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    flex-direction: column;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Chatbot Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

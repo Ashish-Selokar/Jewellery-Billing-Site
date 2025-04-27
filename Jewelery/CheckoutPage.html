@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Jewelry Checkout 💎</title>
+    <link rel="stylesheet" href="CheckoutPage.css">
+</head>
+<body>
+    <div class="checkout-container">
+        <h1 class="title">💎 Secure Jewelry Checkout</h1>
+
+        <form id="checkout-form">
+            <!-- Shipping Details -->
+            <div class="section">
+                <h2>📦 Shipping Details</h2>
+                <div class="input-group">
+                    <input type="text" id="name" required>
+                    <label>Full Name</label>
+                </div>
+
+                <div class="input-group">
+                    <input type="text" id="address" required>
+                    <label>Address</label>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <input type="text" id="city" required>
+                        <label>City</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" id="zip" required>
+                        <label>Zip Code</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Payment Options -->
+            <div class="section">
+                <h2>💳 Payment Method</h2>
+                <div class="payment-options">
+                    <button type="button" class="payment-btn active" id="btn-upi">UPI / QR Code</button>
+                    <button type="button" class="payment-btn" id="btn-card">Credit / Debit Card</button>
+                </div>
+
+                <div id="upi-section">
+                    <h3>📷 Scan & Pay</h3>
+                    <img src="your-qr-code.png" id="qr-code" alt="Scan to Pay">
+                    <div class="input-group">
+                        <input type="text" id="transaction-id" required>
+                        <label>Enter UPI Transaction ID</label>
+                    </div>
+                </div>
+
+                <div id="card-section" style="display: none;">
+                    <div class="input-group">
+                        <input type="text" id="card-number" required>
+                        <label>Card Number</label>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <input type="text" id="expiry" required>
+                            <label>Expiry Date (MM/YY)</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="cvv" required>
+                            <label>CVV</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="section">
+                <h2>🛍️ Order Summary</h2>
+                <div class="order-summary">
+                    <p>✨ Gold Necklace <span>$500</span></p>
+                    <p>💍 Diamond Ring <span>$750</span></p>
+                    <p class="total">Total: <span id="total">$1250</span></p>
+                </div>
+            </div>
+
+            <button type="submit">💎 Complete Purchase</button>
+        </form>
+    </div>
+
+    <script src="CheckoutPage.js"></script>
+</body>
+</html>

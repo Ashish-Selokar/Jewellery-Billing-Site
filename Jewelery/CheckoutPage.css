@@ -1,0 +1,118 @@
+/* Premium Look with Neumorphism */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #8e44ad, #5e3370);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.checkout-container {
+    width: 500px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(142, 68, 173, 0.5);
+    text-align: center;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #8e44ad;
+    margin-bottom: 20px;
+}
+
+.section {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #8e44ad;
+    font-size: 20px;
+    border-bottom: 2px solid #8e44ad;
+    padding-bottom: 5px;
+}
+
+/* Input Fields */
+.input-group {
+    position: relative;
+    margin: 15px 0;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #8e44ad;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.input-group label {
+    position: absolute;
+    top: 14px;
+    left: 12px;
+    font-size: 14px;
+    color: #8e44ad;
+    transition: 0.3s;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: #5e3370;
+}
+
+/* Payment Buttons */
+.payment-options {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.payment-btn {
+    flex: 1;
+    padding: 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #8e44ad;
+    color: #fff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.payment-btn.active {
+    background: #5e3370;
+}
+
+/* QR Code */
+#qr-code {
+    width: 200px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    background: #8e44ad;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #5e3370;
+}

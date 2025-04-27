@@ -1,0 +1,615 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    background-color: #fdfcfb;
+    color: #333;
+}
+
+/* Header */
+.main-header {
+    background-color: #8e44ad;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 98%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin: 0 1rem;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #f1c40f;
+}
+
+.navbar i {
+    margin: 5px;
+}
+
+/* Modal Styling */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content h2 {
+    color: #6c3483;
+    margin-bottom: 1rem;
+}
+
+.modal-content button {
+    background: #6c3483;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+}
+
+.modal-content button:hover {
+    background-color: #8e44ad;
+}
+
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to right, #8e44ad, #c0392b);
+    padding: 5rem 2rem;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the parent container */
+.stock-ack {
+    width: 97.3%;
+    padding: 20px;
+    background-color: #f4f4f4;
+    /* display: flex; */
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the links container */
+.stock-ack1 {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+}
+
+/* Styling for Stock Acknowledgement the links */
+.stock-ack1 a {
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 60px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Hover effect for links */
+.stock-ack1 a:hover {
+    background-color: #8e44ad;
+    color: white;
+    transform: translateY(-3px);
+    /* Upward movement on hover */
+}
+
+/* Optional: Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .stock-ack1 {
+        flex-wrap: wrap;
+        /* Allow wrapping of items on smaller screens */
+        width: 90%;
+        justify-content: center;
+    }
+
+    .stock-ack1 a {
+        font-size: 14px;
+    }
+}
+
+
+
+.stock-ack2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+    margin: 10px 0px;
+    background-color: #d2d2d2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 100%;
+}
+
+.stock-ack2 a {
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 60px;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    font-weight: bold;
+
+}
+
+/* Styling for the stock-ack2 container */
+.stock-ack2 {
+    display: flex;
+    /* Use flexbox to align elements */
+    justify-content: space-between;
+    /* Distribute space between items */
+    align-items: center;
+    /* Vertically center the items */
+    padding: 10px;
+    /* Optional padding */
+}
+
+/* Styling for the h4 element */
+.stock-ack2 h4 {
+    margin: 0;
+    /* Remove default margin */
+}
+
+/* Styling for the links */
+.stock-ack2 a {
+    margin-left: 20px;
+    /* Add space between links */
+    text-decoration: none;
+    /* Remove underline */
+    font-size: 16px;
+    /* Font size */
+    transition: color 0.3s;
+    /* Smooth color transition on hover */
+}
+
+/* Main container */
+.stock-ack3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background: #fff;
+    max-width: 100%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Stock-ack item section */
+.stock-ack-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centering content horizontally */
+    width: 15%;
+}
+
+/* Labels */
+.stock-ack-item label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Input fields container */
+.inputs {
+    display: flex;
+    justify-content: center;  /* Centering inputs horizontally */
+    gap: 10px;
+    width: 100%;
+}
+
+/* Input fields */
+input[type="text"] {
+    width: 80%;
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    text-align: center;
+}
+
+input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    border: 2px dashed #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Focus effect on input fields */
+input:focus {
+    border-color: #8e44ad;
+    outline: none;
+    box-shadow: 0 0 5px #9d06de;
+}
+
+
+.big-Table {
+    padding: 15px;
+    margin: 15px;
+}
+
+
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 10px;
+}
+
+table {
+    width: 200%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+
+thead {
+    background: #c1a5ce;
+    font-weight: bold;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 14px;
+}
+
+input, select {
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input::placeholder {
+    font-weight: bold;
+    color: #888;
+}
+
+select {
+    font-weight: bold;
+    background: #fff;
+    cursor: pointer;
+}
+
+
+ /* Container for the Table button buttons */
+ .tableButton {
+    text-align: center;
+    /* margin-top: 20px; */
+  }
+
+  /* Common button styling */
+  .tableButton button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  /* Button color variations */
+  .btn1 { background-color: #4CAF50; color: white; }
+  .btn2 { background-color: #2196F3; color: white; }
+  .btn3 { background-color: #ff9800; color: white; }
+  .btn4 { background-color: #f44336; color: white; }
+
+  /* Hover effect */
+  .tableButton button:hover {
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+  }
+
+  .btn1:hover { background-color: #45a049; }
+  .btn2:hover { background-color: #0b7dda; }
+  .btn3:hover { background-color: #e68917; }
+  .btn4:hover { background-color: #d32f2f; }
+
+  /* Focus effect */
+  .tableButton button:focus {
+    outline: none;
+  }
+
+.big-Table2{
+    padding: 15px;
+    margin: 15px;
+}
+
+
+
+.table-container2 {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 10px;
+}
+
+
+ /* Container for the Table button buttons */
+ .tableButton2 {
+    text-align: center;
+    /* margin-top: 20px; */
+  }
+
+  /* Common button styling */
+  .tableButton2 button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+
+
+
+.collections-container {
+    padding: 2rem;
+    margin-top: 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Title Styling */
+.collections-container h2 {
+    font-size: 2.5rem;
+    color: #6c3483;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Grid Layout */
+.collection-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+/* Collection Items */
+.collection-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.collection-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.collection-item p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #6c3483;
+    text-transform: uppercase;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ddd;
+}
+
+
+
+/* Hover Effect */
+.collection-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.collection-item:hover p {
+    background-color: #6c3483;
+    color: #fff;
+}
+
+
+/* Add hover effect for hero section */
+.hero-section {
+    background: linear-gradient(to right, #8e44ad, #c0392b);
+    padding: 5rem 2rem;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Add dynamic button styles */
+button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 20px;
+    background-color: #6c3483;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #8e44ad;
+}
+
+/* Center the search bar */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    /* Adjust the height as needed */
+    margin: 2rem 0;
+}
+
+#search-bar {
+    width: 50%;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+#search-bar:focus {
+    box-shadow: 2px 2px 12px rgba(108, 52, 131, 0.4);
+}
+
+/* Options Below Search Bar */
+.options-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    /* Space between buttons */
+    margin-top: 1rem;
+}
+
+.option-btn {
+    background-color: #6c3483;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.option-btn:hover {
+    background-color: #5a2d71;
+    transform: scale(1.05);
+}
+
+.option-btn:active {
+    background-color: #4b235c;
+}
+
+/* Dynamic Results Section */
+#results-container {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Highlighting Selected Option */
+.option-btn.selected {
+    background-color: #e6b800;
+    /* Highlight color */
+    color: #fff;
+    transform: scale(1.1);
+    /* Slightly enlarge */
+}
+
+
+.main-footer {
+    background-color: #8e44ad;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.main-footer .social-icons a {
+    margin: 0 0.5rem;
+    display: inline-block;
+}
+
+.main-footer .social-icons i {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+
+.main-footer .social-icons i:hover {
+    transform: scale(1.2);
+}
+
+.main-footer p {
+    margin: 1rem 0 0;
+    font-size: 1rem;
+}

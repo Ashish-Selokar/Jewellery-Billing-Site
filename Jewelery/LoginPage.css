@@ -1,0 +1,121 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffcc99, #8e44ad);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Login Box */
+.login-box {
+    background: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-box h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #8e44ad;
+}
+
+.login-box p {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+
+/* Input Group */
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    background: #f3f3f3;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 10px;
+    position: relative;
+}
+
+.input-group i {
+    margin-right: 10px;
+    color: #8e44ad;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    background: transparent;
+}
+
+/* Eye Icon for Password Visibility */
+.eye-icon {
+    cursor: pointer;
+    color: #8e44ad;
+    position: absolute;
+    right: 10px;
+    font-size: 16px;
+}
+
+/* Button Group */
+.button-group {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn-login {
+    background: #8e44ad;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    flex: 1;
+    transition: background 0.3s;
+}
+
+.btn-login:hover {
+    background: #732d91;
+}
+
+/* Signup Link */
+.signup-link {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+.signup-link a {
+    color: #8e44ad;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.signup-link a:hover {
+    color: #732d91;
+}

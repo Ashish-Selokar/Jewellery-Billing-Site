@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewelry Shop Orders</title>
+    <link rel="stylesheet" href="Orders.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">Jewellery Haven</div>
+        <nav class="navbar">
+            <a href="#home"><i class="fa-solid fa-house"></i>Home</a>
+            <a href="#about">About</a>
+            <a href="CollectionPage.html"><i class="fa-solid fa-users"></i>Collection</a>
+            <a href="#"><i class="fa-solid fa-truck-fast"></i>Orders</a>
+            <a href="#location"><i class="fa-solid fa-location-dot"></i> Location</a>
+            <a href="Report.html">Reports</a>
+            <a href="BillingPage.html"><i class="fa-solid fa-money-bill-1"></i>Proceed to Bill</a>
+            <a href=""><i class="fa-solid fa-address-card"></i></a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="header">
+            <h1>Jewelry Shop Orders</h1>
+        </div>
+
+        <div class="tabs">
+            <button id="all" class="active" onclick="filterOrders('all')">All</button>
+            <button id="pending" onclick="filterOrders('pending')">Pending</button>
+            <button id="on-the-way" onclick="filterOrders('on-the-way')">On The Way</button>
+        </div>
+
+        <div class="order-summary">
+            <div>
+                <h2 id="pending-count">2</h2>
+                <p>Pending Orders</p>
+            </div>
+            <div>
+                <h2 id="on-the-way-count">1</h2>
+                <p>On The Way</p>
+            </div>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="search-bar" placeholder="Search orders..." onkeyup="searchOrders()">
+        </div>
+
+        <div class="add-order-section">
+            <input type="text" id="new-order-id" placeholder="Order ID">
+            <select id="new-order-status">
+                <option value="pending">Pending</option>
+                <option value="on-the-way">On The Way</option>
+            </select>
+            <button onclick="addOrder()">Add Order</button>
+        </div>
+
+        <ul class="order-list" id="order-list">
+            <!-- Existing Orders -->
+            <li class="order-item pending" id="order-12345">
+                <span>Order #12345</span>
+                <span class="status pending">Pending</span>
+                <button class="remove-btn" onclick="removeOrder('order-12345')">Remove</button>
+            </li>
+            <li class="order-item on-the-way" id="order-12346">
+                <span>Order #12346</span>
+                <span class="status on-the-way">On The Way</span>
+                <button class="remove-btn" onclick="removeOrder('order-12346')">Remove</button>
+            </li>
+            <li class="order-item pending" id="order-12347">
+                <span>Order #12347</span>
+                <span class="status pending">Pending</span>
+                <button class="remove-btn" onclick="removeOrder('order-12347')">Remove</button>
+            </li>
+        </ul>
+    </div>
+
+    
+    <script src="Orders.js"></script>
+</body>
+</html>

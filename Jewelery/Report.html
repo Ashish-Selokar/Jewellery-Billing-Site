@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report</title>
+    <link rel="stylesheet" href="Report.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="logo">Jewellery Haven</div>
+        <nav class="navbar">
+            <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="AboutPage.html"><i class="fa-solid fa-circle-info"></i> About</a>
+            <a href="CollectionPage.html"><i class="fa-solid fa-users"></i> Collection</a>
+            <a href="Orders.html"><i class="fa-solid fa-truck-fast"></i> Orders</a>
+            <a href="#location"><i class="fa-solid fa-location-dot"></i> Location</a>
+            <a href="Report.html">Reports</a>
+            <a href="BillingPage.html"><i class="fa-solid fa-money-bill-1"></i> Proceed to Bill</a>
+            <a href="profile.html"><i class="fa-solid fa-address-card"></i></a>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <aside class="sideBar">
+            <div class="sideBar1"><a href="#">Firm</a></div>
+            <div class="sideBar1"><a href="#">Settings</a></div>
+            <div class="sideBar1"><a href="#">Accounts</a></div>
+            <div class="sideBar1"><a href="#">Daily Book</a></div>
+            <div class="sideBar1"><a href="#">Books</a></div>
+            <div class="sideBar1"><a href="#">Ledger</a></div>
+            <div class="sideBar1"><a href="#">Trial I/L</a></div>
+            <div class="sideBar1"><a href="#">P/L</a></div>
+            <div class="sideBar1"><a href="#">B/L Sheet</a></div>
+            <div class="sideBar1"><a href="#">Logs</a></div>
+            <div class="sideBar1"><a href="#">Calc</a></div>
+        </aside>
+
+
+        <main class="reportContainer">
+            <div class="oneLiner">
+                <h4>Stock Pannel</h4>
+                <input type="number" placeholder="Start Range">-
+                <input type="number" placeholder="End Range">
+                <input type="number" placeholder="WT">
+                <select>
+                    <option value="Gold">Gold</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Gold-Silver">Gold-Silver</option>
+                    <option value="Diamond">Diamond</option>
+                </select>
+                <input list="category" id="fruitsCategoryOfItem" name="fruitCategoryOfItem" placeholder="Item Category">
+                <datalist id="category">
+                    <option value="Ring">
+                    <option value="Necklace">
+                    <option value="Bracelet">
+                    <option value="Earrings">
+                    <option value="Pendant">
+                    <option value="Bangle">
+                    <option value="Anklet">
+                </datalist>
+
+                <select>
+                    <option value="Item Name" disabled selected>Item Name</option>
+                    <option value="Gold">Gold</option>
+                    <option value="Silver">Silver</option>
+                    <option value="Gold-Silver">Gold-Silver</option>
+                    <option value="Diamond">Diamond</option>
+                </select>
+                <button>Go</button>
+            </div>
+            <div class="report-box">
+                <p>Available Stock By Category.</p>
+                <h2>Gold-Silver Stock</h2>
+            </div>
+            <div class="report-box">
+                <p>Available Stock By Category.</p>
+                <h2>Gold Stock</h2>
+            </div>
+            <div class="report-box">
+                <p>Available Stock By Category.</p>
+                <h2>Silver Stock</h2>
+            </div>
+            <div class="report-box">
+                <p>Stock Details with Images</p>
+                <h2>Jewellery Panel</h2>
+            </div>
+            <div class="report-box">
+                <p>Stock Details with Images</p>
+                <h2>Wholesale Search</h2>
+            </div>
+            <div class="report-box">
+                <p>Stock Details with Images</p>
+                <h2>Sold Out Stock List</h2>
+            </div>
+            <div class="report-box">
+                <p>Stock Details with Images</p>
+                <h2>Retail Stock List</h2>
+            </div>
+            <div class="report-box">
+                <p>Stock Details with Images</p>
+                <h2>Purchase Stock List</h2>
+            </div>
+        </main>
+    </div>
+
+
+
+    <script src="Report.js"></script>
+</body>
+
+</html>

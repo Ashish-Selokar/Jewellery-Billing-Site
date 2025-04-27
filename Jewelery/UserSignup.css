@@ -1,0 +1,56 @@
+body {
+    background: linear-gradient(135deg, #ffcc99, #8e44ad);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+
+
+}
+
+.signup-container h2{
+    text-align: center;
+    color: #8e44ad;
+
+}
+.signup-container {
+
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+   
+
+    
+}
+.signup-button {
+    background-color: #8e44ad;
+    color: white;
+}
+.signup-button:hover {
+    background-color: #732d91;
+}
+.signup-button p{
+    margin: 0;
+    
+}
+.password-strength {
+    margin-top: 5px;
+    font-size: 12px;
+}
+.password-strength.weak {
+    color: red;
+}
+.password-strength.medium {
+    color: orange;
+}
+.password-strength.strong {
+    color: green;
+}

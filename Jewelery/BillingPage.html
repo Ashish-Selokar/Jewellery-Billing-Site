@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing Page</title>
+    <link rel="stylesheet" href="BillingPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="logo">Jewellery Haven</div>
+        <nav class="navbar">
+            <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+            <a href="AboutPage.html"><i class="fa-solid fa-circle-info"></i>About</a>
+            <a href="CollectionPage.html"><i class="fa-solid fa-users"></i>Collections</a>
+            <a href="Orders.html"><i class="fa-solid fa-truck-fast"></i>Orders</a>
+            <a href=""><i class="fa-solid fa-location-dot"></i> Location</a>
+            <a href="Report.html">Reports</a>
+            <a href="BillingPage.html"><i class="fa-solid fa-money-bill-1"></i>Proceed to Bill</a>
+            <a href=""><i class="fa-solid fa-address-card"></i></a>
+        </nav>
+    </header>
+
+
+    <div class="container">
+        <div class="sideBar">
+            <div class="sideBar1">
+                <a href="">Firm</a>
+            </div>
+            <div class="sideBar1">
+                <a href="">Settings</a>
+            </div>
+            <div class="sideBar1">
+                <a href="">Accounts</a>
+            </div>
+            <div class="sideBar1">
+                <a href="">Daily Book</a>
+            </div>
+
+            <div class="sideBar1">
+                <a href="">Books</a>
+            </div>
+
+            <div class="sideBar1">
+                <a href="">Ledger</a>
+            </div>
+
+            <div class="sideBar1">
+                <a href="">Trial I/l</a>
+            </div>
+
+            <div class="sideBar1">
+                <a href="">P/L</a>
+            </div>
+
+            <div class="sideBar1">
+                <a href="">B/L Sheet</a>
+            </div>
+
+            <div class="sideBar1">
+                <a href="">Logs</a>
+            </div>
+
+            <div class="sideBar1">
+                <a href="">Calc</a>
+            </div>
+
+        </div>
+
+
+        <!-- Billing Section -->
+        <div class="main-billing">
+
+            <section id="bill-section" class="billing-container">
+                <h2>Billing Section</h2>
+                <!-- Customer Information -->
+                <div class="customer-info">
+                    <div class="field-name">
+                        <label for="customerFirstName">First Name:</label>
+                        <input type="text" id="customerFirstName" placeholder="Customer First Name">
+                    </div>
+                    <div class="field-name">
+                        <label for="customerLastName">Last Name:</label>
+                        <input type="text" id="customerLastName" placeholder="Customer Last Name">
+                    </div>
+
+                    <div class="field-name">
+                        <label for="customer-phone">Phone Number:</label>
+                        <input type="text" id="customer-phone" placeholder="Customer Phone No.">
+                    </div>
+
+                    <div class="field-name">
+                        <label for="customer-email">Email Id:</label>
+                        <input type="email" id="customer-email" placeholder="Customer Email">
+                    </div>
+
+
+                    <!-- <div class="field-name">
+                    <label for="customer-country">Select Country:</label>
+                    <input type="text" id="customer-country" placeholder="Customer Country">
+                </div> -->
+
+                    <div class="field-name">
+                        <label for="customer-country">Select Country:</label>
+                        <div class="dropdown" id="country-dropdown">
+                            <div class="dropdown-selected">Select Country</div>
+                            <ul class="dropdown-options"></ul>
+                        </div>
+                    </div>
+
+                    <div class="field-name">
+                        <label for="pinCode">Pin Code:</label>
+                        <input type="text" id="pinCode" placeholder="Customer City Pin Code">
+                    </div>
+
+                    <div class="field-name">
+                        <label for="city">Select City/Village:</label>
+                        <input type="text" id="city" placeholder="Customer City">
+                    </div>
+
+
+                    <div class="field-name">
+                        <label for="state">Select State:</label>
+                        <input type="text" id="state" placeholder="Customer State">
+                    </div>
+
+
+
+                    <div class="field-name">
+                        <label for="customer-address">Enter Address:</label>
+                        <input type="text" id="customer-address" placeholder="Customer Address">
+                    </div>
+
+                    <div class="field-name">
+                        <label for="customer-aadhar">Aadhar Number:</label>
+                        <input type="text" id="customer-aadhar" placeholder="Aadhar Number">
+                    </div>
+
+                    <div class="field-name">
+                        <label for="customer-pan">PAN Number:</label>
+                        <input type="text" id="customer-pan" placeholder="PAN Number">
+
+                    </div>
+                </div>
+
+                <!-- Add Item to Bill -->
+                <div class="add-item">
+                    <h3>Add Items to Bill</h3>
+                    <input type="text" id="item-name" placeholder="Item Name">
+                    <input type="number" id="item-price" placeholder="Item Price" min="1">
+                    <input type="number" id="item-quantity" placeholder="Quantity" min="1" value="1">
+                    <button id="add-item-to-bill">Add Item</button>
+                </div>
+
+                <!-- Bill Items Table -->
+                <table id="billing-table">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>GST(3%)</th>
+                            <th>Total</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="billing-items">
+                        <!-- Dynamic Rows Will Be Added Here -->
+                    </tbody>
+                </table>
+
+                <!-- Bill Summary -->
+                <div class="bill-summary">
+                    <p><strong>Total Amount:</strong> ₹<span id="total-amount">0</span></p>
+                    <p><strong>Discount:</strong> ₹<span id="discount-amount">0</span></p>
+                    <p><strong>GST (3%):</strong> ₹<span id="tax-amount">0</span></p>
+
+                    <!-- Shipping Charges Input Field -->
+                    <div class="form-group">
+                        <label for="shipping-charges">Shipping Charges:</label>
+                        <input type="number" id="shipping-charges" class="input-field"
+                            placeholder="Enter shipping charges" />
+                    </div>
+
+                    <p><strong>Final Total:</strong> ₹<span id="final-total">0</span></p>
+
+                    <div class="coupon-section">
+                        <input type="text" id="coupon-code" placeholder="Enter Coupon Code">
+                        <button id="apply-coupon">Apply Coupon</button>
+                        <p id="coupon-message" style="color: red;"></p>
+                    </div>
+
+                    <button id="finalize-bill">Finalize Bill</button>
+                </div>
+            </section>
+
+
+            <div class="ratesContainer">
+
+
+                <!-- ********GOld API******** -->
+                <div class="liveRate">
+                    <h1>Live Gold Rate</h1>
+                    <div id="gold-rate">Loading...</div>
+                    <div id="error"></div>
+                </div>
+
+                <!-- **********Silver API******** -->
+                <div class="silver-container">
+                    <h1>Live Silver Rate</h1>
+                    <p id="silver-price">Loading...</p>
+                </div>
+            </div>
+            
+            <!-- Modal for Finalizing Bill -->
+            <div id="finalize-modal" class="modal">
+                <div class="modal-content">
+                    <h2>Bill Summary</h2>
+                    <table id="final-bill-items">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="final-bill-body">
+                            <!-- Final Bill Items will go here -->
+                        </tbody>
+                    </table>
+
+                    <div class="modal-footer">
+                        <p><strong>Total Amount:</strong> ₹<span id="final-total-amount">0</span></p>
+                        <button id="share-button">Share Bill</button>
+                        <button id="print-bill">Print Bill</button>
+                        <button id="close-modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="BillingPage.js"></script>
+</body>
+
+</html>

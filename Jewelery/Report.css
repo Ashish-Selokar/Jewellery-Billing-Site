@@ -1,0 +1,227 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    background-color: #fdfcfb;
+    color: #333;
+    padding-top: 70px; /* Space for the fixed header */
+    display: flex;
+    width: 100%;
+    background: linear-gradient(135deg, #ffcc99, #8e44ad);
+}
+
+/* Header */
+.main-header {
+    background-color: #8e44ad;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 99%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin: 0 1rem;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #f1c40f;
+}
+
+.navbar i {
+    margin: 5px;
+}
+
+.wrapper{
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar */
+.sideBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 220px; /* Fixed sidebar width */
+    height: 100vh; /* Full height */
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    position: absolute;
+    top: 70px; /* Below the header */
+    left: 0;
+    background: linear-gradient(135deg, #ffcc99, #8e44ad);
+}
+
+/* Sidebar buttons */
+.sideBar1 {
+    width: 180px;
+    height: 50px;
+    background: #8e44ad; /* Purple shade */
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin: 15px 0; /* Gap between sidebar items */
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Sidebar links */
+.sideBar1 a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover effects */
+.sideBar1:hover {
+    background: #9b59b6; /* Lighter purple */
+    box-shadow: 4px 4px 10px rgba(155, 89, 182, 0.5);
+    transform: translateY(-8px);
+}
+
+.sideBar1:hover a {
+    color: #ecf0f1;
+}
+
+.sideBar1:active {
+    transform: scale(0.95);
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Report section container */
+.reportContainer {
+    display: flex;
+    flex-wrap: wrap; /* Ensures responsive wrapping */
+    justify-content: flex-start; /* Align to the left side */
+    gap: 40px; /* Space between report boxes */
+    margin-left: 300px; /* Sidebar width + some margin */
+    width: calc(100% - 300px); /* Adjust width dynamically */
+}
+
+.oneLiner {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.oneLiner h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.oneLiner input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+    width: 100px;
+}
+
+.oneLiner input:first-of-type {
+    margin-left: auto; /* Push input fields to the right */
+}
+
+.oneLiner input:focus {
+    border-color: #007bff;
+}
+
+.oneLiner input:nth-of-type(3){
+    width: 40px;
+}
+
+select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+select:focus {
+    border-color: #007bff;
+}
+
+
+.oneLiner button{
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+/* Report boxes */
+.report-box {
+    background-color: lemonchiffon;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px; /* Fixed width for alignment */
+    height: 180px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+/* Hover effect */
+.report-box:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+/* Text styling */
+.report-box h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: left;
+}
+
+.report-box p {
+    font-size: 1rem;
+    color: #8e44ad;
+    margin-top: 50px;
+    text-align: right;
+}
+

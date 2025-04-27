@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Attendance Management</title>
+    <link rel="stylesheet" href="Attandance.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Attendance Management</h1>
+        
+        <div class="input-section">
+            <input type="text" id="employeeName" placeholder="Enter Employee Name">
+            <button onclick="markAttendance('Present')">Mark Present</button>
+            <button onclick="markAttendance('Absent')">Mark Absent</button>
+        </div>
+        
+        <h2>Attendance List</h2>
+        <button onclick="sortAttendance()">Sort by Name</button>
+        <div class="attendance-search-wrapper">
+            <div class="attendance-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="attendanceList"></tbody>
+                </table>
+            </div>
+            
+            <div class="search-section">
+                <h3>Search Attendance</h3>
+                <input type="text" id="searchEmployee" placeholder="Enter Employee Name">
+                <button onclick="searchAttendance()">Search</button>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Date</th>
+                            <th>Time</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="searchResults"></tbody>
+                </table>
+            </div>
+        </div>
+        <h2>Attendance Overview</h2>
+        <div class="filter-section">
+            <label for="filter">View By:</label>
+            <select id="filter" onchange="updateChart()">
+                <option value="today">Today</option>
+                <option value="week">Weekly</option>
+                <option value="month">Monthly</option>
+                <option value="year">Yearly</option>
+            </select>
+        </div>
+        <div class="chart-container">
+            <canvas id="attendanceChart"></canvas>
+        </div>
+        
+        
+        <h2>Employee Attendance Summary</h2>
+        <div id="attendanceSummary"></div>
+        
+        <h2>Export Data</h2>
+        <div class="export-section">
+            <button class="export-btn" onclick="exportToCSV()">Export CSV</button>
+        </div>
+    </div>
+    
+    <script src="Attandance.js"></script>
+</body>
+</html>

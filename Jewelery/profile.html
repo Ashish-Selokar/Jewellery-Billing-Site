@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Information</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+    <!-- Overlay Container (Popup) -->
+    <div id="profile-overlay" class="overlay">
+        <div class="profile-container">
+            <span class="close-btn" id="close-profile">&times;</span> 
+            <h1 class="profile-heading">Your Profile</h1>
+            
+            <div class="profile-info-container">
+                <!-- Profile Picture Section -->
+                <div class="profile-picture-section">
+                    <h2>Profile Picture</h2>
+                    <div class="profile-picture-container">
+                        <img src="https://via.placeholder.com/150" 
+                             alt="Profile Picture" 
+                             id="profile-picture"
+                             class="profile-picture">
+                    </div>
+                    <button class="edit-btn" id="change-picture-btn">Change Profile Picture</button>
+                    <input type="file" id="file-input" style="display: none;" accept="image/*">
+                    <div id="preview-container" style="display: none;">
+                        <p>Preview:</p>
+                        <img id="preview-image" src="" alt="Preview" class="profile-picture">
+                        <button class="edit-btn" id="confirm-picture-btn">Confirm</button>
+                        <button class="edit-btn" id="cancel-picture-btn">Cancel</button>
+                    </div>
+                </div>
+
+                <!-- Personal Information Section -->
+                <div class="profile-info-section">
+                    <h2>Personal Information</h2>
+                    <div class="info-item">
+                        <label for="username">Username:</label>
+                        <span id="username">JohnDoe123</span>
+                        <button class="edit-btn" onclick="editInfo('username')">Edit</button>
+                        <button class="save-btn" id="save-username" style="display: none;" onclick="saveInfo('username')">Save</button>
+                    </div>
+                    <div class="info-item">
+                        <label for="email">Email:</label>
+                        <span id="email">johndoe@example.com</span>
+                        <button class="edit-btn" onclick="editInfo('email')">Edit</button>
+                        <button class="save-btn" id="save-email" style="display: none;" onclick="saveInfo('email')">Save</button>
+                    </div>
+                    <div class="info-item">
+                        <label for="phone">Phone:</label>
+                        <span id="phone">+1234567890</span>
+                        <button class="edit-btn" onclick="editInfo('phone')">Edit</button>
+                        <button class="save-btn" id="save-phone" style="display: none;" onclick="saveInfo('phone')">Save</button>
+                    </div>
+                    <div class="info-item">
+                        <label for="address">Shipping Address:</label>
+                        <span id="address">123 Main Street, City, Country</span>
+                        <button class="edit-btn" onclick="editInfo('address')">Edit</button>
+                        <button class="save-btn" id="save-address" style="display: none;" onclick="saveInfo('address')">Save</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order History Section -->
+            <div class="profile-section">
+                <h2>Order History</h2>
+                <ul id="order-history">
+                    <li>Order #12345 - Delivered on 10/12/2024</li>
+                    <li>Order #12346 - Delivered on 15/12/2024</li>
+                    <li>Order #12347 - Delivered on 20/12/2024</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Information Form</title>
+    <link rel="stylesheet" href="Staff-info.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+        <h2 style="text-align:center;">Staff Information Form</h2>
+        <form>
+            <div class="section">
+                <h3>STAFF INFORMATION</h3>
+                <div class="form-group">
+                    <label>Role:</label>
+                    <input type="text" value="Administrator">
+                    <label>Employee Type:</label>
+                    <input type="text" value="Employee & Staff">
+                </div>
+                <div class="form-group">
+                    <label>Full Name: <span class="required">*</span></label>
+                    <input type="text" id="full-name" required>
+                    <label>Gender:</label>
+                    <div class="radio-group">
+                        <input type="radio" name="gender" value="Male"> Male
+                        <input type="radio" name="gender" value="Female"> Female
+                        <input type="radio" name="gender" value="Other"> Other
+                    </div>
+                </div>
+                <div class="form-group">
+
+                    <label>Date of Birth: <span class="required">*</span></label>
+                    <input type="date" id="dob" required>
+                    <label>Max. Qualification:</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>Contact Number: <span class="required">*</span></label>
+                    <input type="text" id="contact-number" required pattern="\d{10}"
+                        title="Enter a valid 10-digit number">
+
+                    <label>Email ID: <span class="required">*</span></label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="upload-photo">Upload your photo<span class="required">*</span></label>
+                    <input type="file" id="upload-photo" required accept="image/*"onchange="previewImage(event, 'photo-preview')">
+                    <img id="photo-preview" style="display:none; width:100px; height:100px; margin-top:10px;">
+
+                    <label for="upload-sign">Upload your Sign <span class="required">*</span></label>
+                    <input type="file" id="upload-sign" required accept="image/*" onchange="previewImage(event, 'sign-preview')">
+                    <img id="sign-preview" style="display:none; width:100px; height:100px; margin-top:10px;">
+                </div>
+
+                <div class="form-group">
+                    <label>Emergency Contact Number:</label>
+                    <input type="text">
+                    <label>Emergency Contact Person:</label>
+                    <input type="text">
+                </div>
+
+            </div>
+            <div class="section">
+                <h3>ADDRESS INFORMATION</h3>
+                <div class="form-group">
+                    <label>Current Address:</label>
+                    <input type="text">
+                    <label>Permanent Address:</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>Village:</label>
+                    <input type="text">
+                    <label>Ward Number:</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>City:</label>
+                    <input type="text" value="Bangalore">
+                    <label>State:</label>
+                    <input type="text" value="Maharashtra">
+                </div>
+                <div class="form-group">
+                    <label>Country:</label>
+                    <input type="text" value="India">
+                    <label>PIN Code:</label>
+                    <input type="text" id="pincode" pattern="\d{6}" title="Enter a valid 6-digit PIN Code">
+                </div>
+            </div>
+
+
+            <div class="section">
+                <h3>EDUCATIONAL QUALIFICATION</h3>
+                <div class="form-group">
+                    <label>10th Board:</label>
+                    <input type="text">
+                    <label>10th Passing Year:</label>
+                    <input type="number">
+                </div>
+                <div class="form-group">
+                    <label>10th Percentage:</label>
+                    <input type="text">
+                    <label>12th Board:</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>12th Passing Year:</label>
+                    <input type="number">
+                    <label>12th Percentage:</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>Highest Qualification:</label>
+                    <input type="text">
+                    <label>University:</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>Year of Passing:</label>
+                    <input type="number">
+                    <label>Percentage:</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>Certifications & Courses:</label>
+                    <input type="text">
+                    <label>Year of Completion:</label>
+                    <input type="number">
+                </div>
+            </div>
+
+            <div class="section01">
+                <h3>SKILLS & EXPERIENCE</h3>
+                <div class="form-group">
+                    <label>Technical Skills:</label>
+                    <input type="text">
+                    <label>Soft Skills:</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>Work Experience (Years):</label>
+                    <input type="number">
+                    <label>Previous Company:</label>
+                    <input type="text">
+                </div>
+            </div>
+
+
+            <div class="section">
+                <h3>EMPLOYMENT DETAILS</h3>
+                <div class="form-group">
+                    <label>Designation:</label>
+                    <input type="text">
+                    <label>Date of Joining:</label>
+                    <input type="date">
+                </div>
+                <div class="form-group">
+                    <label>Department:</label>
+                    <input type="text">
+                    <label>Salary:</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>Previous Experience (Years):</label>
+                    <input type="number">
+                    <label>Employment Type:</label>
+                    <select>
+                        <option>Full-Time</option>
+                        <option>Part-Time</option>
+                        <option>Contract</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Active/Inactive:</label>
+                    <select>
+                        <option>Active</option>
+                        <option>Inactive</option>
+                    </select>
+                    <label>Employee ID:</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="section">
+                <h3>BANK DETAILS</h3>
+                <div class="form-group">
+                    <label>Bank Name:</label>
+                    <input type="text">
+                    <label>Account Number:</label>
+                    <input type="text">
+                </div>
+                <div class="form-group">
+                    <label>IFSC Code:</label>
+                    <input type="text">
+                    <label> Bank Passbook Photo</label>
+                    <input type="file">
+                </div>
+                <div class="form-group">
+                    <label>PAN Number:</label>
+                    <input type="text">
+                    <label>Upload Pan Card</label>
+                    <input type="file">
+                </div>
+                <div class="form-group">
+                    <label>Adhaar Card Number:</label>
+                    <input type="text">
+                    <label>Uplaod Adhaar Card</label>
+                    <input type="file">
+                </div>
+                <div class="form-group">
+                    <label>GSTIN (If Any):</label>
+                    <input type="text">
+                    <label>Upload GSTIN</label>
+                    <input type="file">
+
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+
+    <script src="Staff-info.js"></script>
+</body>
+
+</html>

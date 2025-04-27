@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewellery Website</title>
+   <link rel="stylesheet" href="style.css">
+   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<style>
+
+
+
+body {
+    visibility: hidden; /* Initially hide the body */
+}
+
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    visibility: visible; /* Ensure the preloader is visible */
+}
+
+/* Custom image as preloader */
+.preloader-image {
+    width: 150px;  /* Set the desired size of your image */
+    height: 150px;
+    /* border-radius: 50%; */
+    visibility: visible; /* Ensure the image is visible */
+}
+
+/* Hide content initially */
+#content {
+    display: none;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* preloader end */
+</style>
+<body class="content">
+
+    <div id="preloader">
+        <!-- Replace the src with the path to your image -->
+        <img src="images/16-02-33-34_512.png" alt="Loading..." class="preloader-image"> <!-- Correct path to the gif -->
+    </div>
+
+    <header class="main-header">
+        <div class="logo">Jewellery Haven</div>
+        <nav class="navbar">
+            <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+            <a href="AboutPage.html"><i class="fa-solid fa-circle-info"></i>About</a>
+            <a href="CollectionPage.html"><i class="fa-solid fa-users"></i>Collection</a>
+            <a href="Orders.html"><i class="fa-solid fa-truck-fast"></i>Orders</a>
+            <a href="#location"><i class="fa-solid fa-location-dot"></i> Location</a>
+            <a href="Report.html">Reports</a>
+            <a href="BillingPage.html"><i class="fa-solid fa-money-bill-1"></i>Proceed to Bill</a>
+            <a href="profile.html"><i class="fa-solid fa-address-card"></i></a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Elegant Jewellery for Every Occasion</h1>
+            <p>Discover our exquisite collection of handcrafted jewellery designed to complement your style.</p>
+        </div>
+    </section>
+
+    <!-- Collection Items -->
+    <div class="bigBox" data-aos="fade-up">
+        <div class="jewelBox"><img src="Images/close-up-golden-ring-isolated_23-2151217874.jpg" alt="" height="350px" width="300px"></div>
+        <div class="jewelBox"><img src="Images/closeup-shot-newlyweds-holding-hands-showing-wedding-rings_181624-15865.jpg" alt="" height="350px" width="300px"></div>
+        <div class="jewelBox"><img src="Images/istockphoto-1277517088-612x612.jpg" alt="" height="350px" width="300px"></div>
+        <div class="jewelBox"><img src="Images/istockphoto-1203020545-612x612.jpg" alt="" height="350px" width="300px"></div>
+        <div class="jewelBox"><img src="Images/istockphoto-497690395-612x612.jpg" alt="" height="350px" width="300px"></div>
+        <div class="jewelBox"><img src="Images/istockphoto-1182100061-612x612.jpg" alt="" height="350px" width="300px"></div>
+        <div class="jewelBox"><img src="Images/close-up-beads_1048944-29985824.jpg" alt="" height="350px" width="300px"></div>
+        <div class="jewelBox"><img src="Images/240_F_781457250_q1rsQqi8InHv5tMyYVLq8yKQLOkvCmXF.jpg" alt=""></div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about-section" data-aos="fade-up">
+        <h2>About Us</h2>
+        <p>At Jewellery Haven, we specialize in creating timeless pieces that blend traditional craftsmanship with modern designs. Explore our journey of bringing elegance and sophistication to your jewellery collection.</p>
+        <button id="viewButton" onclick="gotoAbout()">Know More About</button>
+    </section>
+
+    <!-- Collections Section -->
+    <section id="collections" class="collections-section" data-aos="fade-up">
+        <h2>Our Collections</h2>
+        <div class="collection-gallery">
+            <div class="collection-item">
+                <img src="Images/gold-necklace-png-image.png" alt="Gold Necklace">
+                <p>Gold Necklace</p>
+            </div>
+            <div class="collection-item">
+                <img src="Images/Garrard High Diamond Earrings  in 18ct White Gold.png" alt="Diamond Earrings">
+                <p>Diamond Earrings</p>
+            </div>
+            <div class="collection-item-2">
+                <img src="Images/pngimg.com - jewelry_PNG6703.png" alt="Silver Bracelet">
+                <p>Silver Bracelet</p>
+            </div>
+            <div class="collection-item">
+                <img src="Images/Wedding-Ring-PNG-Photo.png" alt="Platinum Ring"> 
+                <p>Platinum Ring</p>
+            </div>
+        </div>
+        <button id="viewButton" onclick="gotoCollection()">View More Collection</button>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location-section" data-aos="fade-up">
+        <h2>Our Location</h2>
+        <div id="map"> 
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.6598733620212!2d79.13272637503427!3d21.12612218054764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c7d17a003eb1%3A0x5935cf9713952ca7!2sDIGITRON%20SOFTWARES%20AND%20TECHNOLOGY%20%2F%20Digital%20marketing%20%2Fapplication%20development%2F%20social%20media%20marketing!5e0!3m2!1sen!2sin!4v1737371367099!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <p>&copy; 2024 Jewellery Haven. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+
+    window.addEventListener('load', function() {
+        // Delay the display of the homepage content
+        setTimeout(function() {
+            // Hide preloader
+            document.getElementById('preloader').style.display = 'none';
+            // Show the homepage content
+            document.body.style.visibility = 'visible'; // Ensure body content is visible
+        }, 2000);  // 3-second delay before showing homepage content
+    });
+
+</script>
+    
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+
+        offset: 300,
+        duration: 2000,
+    });
+  </script>
+
+</body>
+</html>

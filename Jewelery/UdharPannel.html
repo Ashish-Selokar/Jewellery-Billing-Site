@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewellery Collections</title>
+    <link rel="stylesheet" href="CollectioPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="UdharPannel.css">
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="logo">Jewellery Haven</div>
+        <nav class="navbar">
+            <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+            <a href="AboutPage.html"><i class="fa-solid fa-circle-info"></i>About</a>
+            <a href="CollectionPage.html"><i class="fa-solid fa-users"></i>Collections</a>
+            <a href="Orders.html"><i class="fa-solid fa-truck-fast"></i>Orders</a>
+            <a href=""><i class="fa-solid fa-location-dot"></i>Location</a>
+            <a href="Report.html">Reports</a>
+            <a href="BillingPage.html"> <i class="fa-solid fa-money-bill-1"></i>Proceed to Bill</a>
+            <a href=""><i class="fa-solid fa-address-card"></i></a>
+        </nav>
+    </header>
+
+
+    <div class="big-container">
+        <div class="container">
+            <h2>Udhaar Panel</h2>
+
+            <button class="btn add-row" onclick="addRow()">+ Add Row</button>
+
+
+            <div class="tableOfUdhar">
+                <table id="udhaarTable">
+                    <thead>
+                        <tr>
+                            <th>S.No.</th>
+                            <th>Date</th>
+                            <th>Firm</th>
+                            <th>Main Inv No</th>
+                            <th>User Type</th>
+                            <th>Customer Name</th>
+                            <th>Mobile No</th>
+                            <th>Udhaar Type</th>
+                            <th>Transaction Type</th>
+                            <th>Udhaar Amount</th>
+                            <th>Cash</th>
+                            <th>Bank</th>
+                            <th>Cheque</th>
+                            <th>Online</th>
+                            <th>Deposit Amount</th>
+                            <th>Left Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><input type="date"></td>
+                            <td><input type="text" placeholder="Firm"></td>
+                            <td><input type="text" placeholder="INV-###"></td>
+                            <td><input type="text" placeholder="User Type" id="userType"></td>
+                            <td><input type="text" placeholder="Customer Name"></td>
+                            <td><input type="text" placeholder="XXXXXXXXXX"></td>
+                            <td><input type="text" placeholder="Type"></td>
+                            <td><input type="text" placeholder="Transaction"></td>
+                            <td><input type="number" placeholder="0.00" oninput="updateLeftAmount(this)"></td>
+                            <td><input type="number" placeholder="0.00" oninput="updateLeftAmount(this)"></td>
+                            <td><input type="number" placeholder="0.00" oninput="updateLeftAmount(this)"></td>
+                            <td><input type="number" placeholder="0.00" oninput="updateLeftAmount(this)"></td>
+                            <td><input type="number" placeholder="0.00" oninput="updateLeftAmount(this)"></td>
+                            <td><input type="number" placeholder="0.00" oninput="updateLeftAmount(this)"></td>
+                            <td><input type="number" placeholder="0.00" readonly></td>
+
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="saveButton">
+                    <button>Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="CollectionPage.js"></script>
+<script src="UdharPannel.js"></script>
+</body>
+
+</html>

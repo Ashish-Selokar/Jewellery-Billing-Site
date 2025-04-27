@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CustomerManager.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="logo">Jewellery Haven</div>
+        <nav class="navbar">
+            <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+            <a href="#about"><i class="fa-solid fa-circle-info"></i>About</a>
+            <a href="CollectionPage.html"><i class="fa-solid fa-users"></i>Collection</a>
+            <a href="Orders.html"><i class="fa-solid fa-truck-fast"></i>Orders</a>
+            <a href="#location"><i class="fa-solid fa-location-dot"></i> Location</a>
+            <a href="Report.html">Reports</a>
+            <a href="BillingPage.html"><i class="fa-solid fa-money-bill-1"></i>Proceed to Bill</a>
+            <a href=""><i class="fa-solid fa-address-card"></i></a>
+        </nav>
+    </header>
+
+    <div class="searchBar">
+        <input type="text" id="searchInput" placeholder="Search customer by name, address, or email">
+    </div>
+
+    <div class="container">
+    
+        <div class="form-group">
+            <div><i class="fa-solid fa-phone"></i><input type="text" placeholder="Mobile Number"></div>
+            <div class="name-container">
+                <div class="gender">
+                    <select name="gender" id="Gender">
+                        <option value="Mr.">Mr.</option>
+                        <option value="Mrs.">Mrs.</option>
+                    </select>
+                </div>
+                <input type="text" placeholder="First Name">
+            </div>
+            <div><i class="fa-solid fa-user"></i><input type="text" placeholder="Father Name"></div>
+            <div><input type="text" placeholder="Last Name"></div>
+            <div><input type="number" placeholder="Age"></div>
+            <div><i class="fa-solid fa-envelope"></i><input type="text" placeholder="EMAIL ID"></div>
+            <!-- <div><i class="fa-solid fa-phone"></i><input type="text" placeholder="Phone Number"></div> -->
+            <!-- <div><input type="text" placeholder="S/o"></div> -->
+            <!-- <div><input type="text" placeholder="Select Country"></div> -->
+       <select id="countryDropdown" onchange="fetchStates()">
+        <option value="">Select Country</option>
+    </select>
+
+    <!-- State Dropdown -->
+    <select id="stateDropdown" onchange="fetchCities()">
+        <option value="">Select State</option>
+    </select>
+
+    <!-- City Dropdown -->
+    <select id="cityDropdown">
+        <option value="">Select City</option>
+    </select>
+            <!-- <div><i class="fa-solid fa-map-pin"></i><input type="text" placeholder="PINCODE"></div> -->
+
+            <div><i class="fa-solid fa-map-pin"></i>
+                <input type="text" id="pinCodeInput" placeholder="PINCODE">
+            </div>
+            <!-- <div><i class="fa-solid fa-city"></i><input type="text" placeholder="City / Village"></div> -->
+            <div><i class="fa-solid fa-map-marker-alt"></i><input type="text" placeholder="Residential Address"></div>
+            <!-- <div><input type="text" placeholder="AJ"></div> -->
+            <div><i class="fa-solid fa-percentage"></i><input type="text" placeholder="GST Number"></div>
+            <div><i class="fa-solid fa-id-card"></i><input type="text" placeholder="PAN Number"></div>
+            <div><i class="fa-solid fa-id-card"></i><input type="text" placeholder="Adhaar Card Number"></div>
+            <div><input type="text" placeholder="Finger Scan"></div>
+            <div><input type="text" placeholder="User Type-Customer"></div>
+            <input type="file" placeholder="Customer Photo">
+            <input type="file" placeholder="Customer Signature">
+        </div>
+        <div class="icons">
+            <i class="fa-solid fa-upload"></i>
+            <i class="fa-solid fa-camera"></i>
+        </div>
+
+<!-- Button to Add Customer -->
+<button onclick="addCustomer()">Add Customer</button>
+
+
+
+</div>
+
+
+
+<div class="storedinfo">
+    <!-- Table to Display Customer Details -->
+    <div id="customerTableContainer"></div>
+    
+    <!-- List to Display Added Customers (If Needed) -->
+    <ul id="customerList"></ul>
+</div>
+
+
+
+
+
+
+    <script src="CustomerManager.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="SignupPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <div class="login-container">
+        <div class="login-box">
+            <h1>Shop Owner Sign Up</h1>
+            <p>Fill in the details to create your shop account.</p>
+            <form id="signupForm">
+                <div class="input-group">
+                    <i class="fas fa-store"></i>
+                    <input type="text" placeholder="Shop Name" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Owner's Name" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-phone"></i>
+                    <input type="tel" id="phoneNumber" placeholder="Phone Number" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-location-arrow"></i>
+                    <input type="text" placeholder="Shop Address" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-id-card"></i>
+                    <input type="text" placeholder="GSTIN" required>
+                </div>
+                <div class="input-group">
+                    <i class="fa-solid fa-face-smile"></i>
+                    <input type="text" placeholder="Create Username" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-key"></i>
+                    <input type="password" placeholder="Create Password" required>
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-key"></i>
+                    <input type="password" placeholder="Confirm Password" required>
+                </div>
+
+                <!-- Passport Size Photo Field -->
+                <div class="input-group">
+                    <i class="fas fa-image"></i>
+                    <input type="file" id="passportPhoto" accept="image/*"  required>
+                </div>
+
+                <!-- Error message for passport photo -->
+                <div id="photoError" style="display: none;">
+                    <p style="color: red; font-size: 12px;">Please upload a valid passport-sized photo (JPG, PNG, GIF) with a size less than 2MB.</p>
+                </div>
+
+                <button type="submit" class="btn-login">Sign Up</button>
+            </form>
+            <div class="login-link">
+                <p>Already have an account? <a href="LoginPage.html">Login</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="SignupPage.js"></script>
+</body>
+</html>

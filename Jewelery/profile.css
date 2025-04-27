@@ -1,0 +1,161 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffcc99, #8e44ad);
+    margin: 0;
+    padding: 0;
+}
+
+.profile-container {
+    width: 70%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-heading {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+}
+
+.profile-info-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.profile-picture-section {
+    flex: 0 0 160px; /* Ensure the profile picture section is fixed */
+    text-align: center;
+}
+
+.profile-picture-container {
+    width: 120px;
+    height: 120px;
+    margin: 10px 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #8e44ad;
+}
+
+.profile-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-info-section {
+    flex: 1;
+}
+
+.profile-info-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.info-item label {
+    font-weight: bold;
+    color: #333;
+}
+
+.info-item span {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Buttons */
+.edit-btn, .save-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.edit-btn:hover, .save-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Order History */
+#order-history {
+    list-style: none;
+    padding: 0;
+}
+
+#order-history li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+
+
+/* Overlay Background */
+
+/* Profile Container (Popup) */
+.profile-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    max-width: 600px;
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*  */

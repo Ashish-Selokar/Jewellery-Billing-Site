@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 98%;
+    margin: auto;
+}
+
+.section {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+.section h3 {
+    background: #8e44ad;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    text-align: left;
+    margin: 0;
+}
+
+.section01 {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+.section01 h3 {
+    background: #8e44ad;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    text-align: left;
+    margin: 0;
+}
+
+.form-group {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    flex: 1;
+    min-width: 200px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    flex: 2;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.form-group .radio-group {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* Image preview ke liye styling */
+.form-group img {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.required {
+    color: red;
+    font-weight: bold;
+}
+
+
+
+
+.submit-btn {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}

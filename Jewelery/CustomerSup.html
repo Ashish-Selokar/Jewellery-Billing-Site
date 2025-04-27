@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Support</title>
+    <link rel="stylesheet" href="CustomerSup.css">
+</head>
+<body>
+
+    <div class="support-container">
+        <h1>Customer Support</h1>
+
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq">
+                <div class="question">How can I track my order?</div>
+                <div class="answer">You can track your order using the tracking number sent to your email.</div>
+            </div>
+            <div class="faq">
+                <div class="question">What is your return policy?</div>
+                <div class="answer">We offer a 30-day return policy for unused jewelry in original packaging.</div>
+            </div>
+            <div class="faq">
+                <div class="question">Do you offer international shipping?</div>
+                <div class="answer">Yes, we ship internationally. Shipping charges vary by location.</div>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="tel" id="phone" placeholder="Your Phone Number" required pattern="[0-9]{10}" title="Enter a valid 10-digit phone number">
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+                <p id="formResponse"></p>
+            </form>
+        </div>
+
+        <!-- AI Chatbot -->
+        <div class="chat-box">
+            <div class="chat-header" onclick="toggleChat()">Live Chat Support (Chatbot)</div>
+            <div class="chat-body" id="chatBody"></div>
+            <div class="chat-footer">
+                <input type="text" id="chatInput" placeholder="Type a message..." onkeypress="handleKeyPress(event)">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="CustomerSup.js"></script>
+</body>
+</html>

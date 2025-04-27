@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan / Girvi Panel</title>
+    <link rel="stylesheet" href="loanPage.css">
+</head>
+
+<body>
+
+        <!-- Header Section -->
+        <header class="main-header">
+            <div class="logo">Jewellery Haven</div>
+            <nav class="navbar">
+                <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+                <a href="AboutPage.html"><i class="fa-solid fa-circle-info"></i>About</a>
+                <a href="CollectionPage.html"><i class="fa-solid fa-users"></i>Collections</a>
+                <a href="Orders.html"><i class="fa-solid fa-truck-fast"></i>Orders</a>
+                <a href=""><i class="fa-solid fa-location-dot"></i>Location</a>
+                <a href="Report.html">Reports</a>
+                <a href="BillingPage.html"> <i class="fa-solid fa-money-bill-1"></i>Proceed to Bill</a>
+                <a href=""><i class="fa-solid fa-address-card"></i></a>
+            </nav>
+        </header>
+
+
+
+    <div class="container">
+        <h1>Add New Loan / Girvi Panel</h1>
+        <div class="loanForm">
+            <div class="form-group">
+                <label for="principalAmount">Principal Amount</label>
+                <input type="number" id="principalAmount" />
+            </div>
+            <div class="form-group">
+                <label for="interestOption">Interest Option</label>
+                <select name="interestOption" id="">
+                    <option value="vala" disabled selected>Interest Option</option>
+                    <option value="val0">Weekly</option>
+                    <option value="val1">Monthly</option>
+                    <option value="val2">Yearly</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="firmName">Firm Name</label>
+                <input type="text" id="firmName" />
+            </div>
+            <div class="form-group">
+                <label for="loanSerialNo">Loan Serial No.</label>
+                <input type="number" id="loanSerialNo" />
+            </div>
+            <div class="form-group">
+                <label for="loanStartDate">Loan Start Date</label>
+                <input type="date" id="loanStartDate" />
+            </div>
+            <div class="form-group">
+                <label for="rateOfInterest">Rate of Interest</label>
+                <select name="rateOfInterest" id="">
+                    <option value="val0" disabled selected>Select ROI</option>
+                    <option value="val1">6%</option>
+                    <option value="val1">6.5%</option>
+                    <option value="val1">7%</option>
+                    <option value="val1">7.5%</option>
+                    <option value="val1">8%</option>
+                    <option value="val1">8.5%</option>
+                    <option value="val1">9%</option>
+                    <option value="val1">9.5%</option>
+                    <option value="val1">10%</option>
+                    <option value="val1">10.5%</option>
+                    <option value="val1">11%</option>
+                    <option value="val1">11.5%</option>
+                    <option value="val1">12%</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="loanPacketNo">Loan/Packet No.</label>
+                <input type="number" id="loanPacketNo" />
+            </div>
+            <div class="form-group">
+                <label for="securedOption">Secured/Unsecured</label>
+                <select name="form-group" id="">
+                    <option value="val0" disabled selected>Select Option</option>
+                    <option value="val1">Secured</option>
+                    <option value="val2">Unsecured</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="big-item">
+            <h2>Item Details</h2>
+            <table id="itemTable">
+                <thead>
+                    <tr>
+                        <th>Metal</th>
+                        <th>Item Name</th>
+                        <th>Qty</th>
+                        <th>Gross Weight</th>
+                        <th>Weight in</th>
+                        <th>Net Weight</th>
+                        <th>Weight</th>
+                        <th>TN / PR</th>
+                        <th>Fine Weight</th>
+                        <th>Value</th>
+                        <th>Image / Picture</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <select>
+                                <option value="GOLD">GOLD</option>
+                                <option value="SILVER">SILVER</option>
+                                <option value="PLATINUM">PLATINUM</option>
+                                <option value="PALLADIUM">PALLADIUM</option>
+                                <option value="COPPER">COPPER</option>
+                                <!-- Add more metal options as needed -->
+                            </select>
+                        </td>
+                        <td><input type="text" placeholder="Item Name / Details"></td>
+                        <td><input type="number" value="1"></td>
+                        <td><input type="number" placeholder="GS WT"></td>
+                        <td><input type="number" placeholder="GM" disabled></td>
+                        <td><input type="text" placeholder="NT WT"></td>
+                        <td><input type="text" placeholder="GM"></td>
+                        <td><input type="text" placeholder="70%"></td>
+                        <td><input type="text" value="" placeholder="FN WT"></td>
+                        <td><input type="text" value="" placeholder="Item Valuation"></td>
+                        <td><button type="button">Upload</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="addItemButton">Add More Item</button>
+
+        </div>
+
+        <div class="small-container">
+            <div class="big-box0">
+            <!-- <div class="box"> -->
+                <h3>OTHER INFORMATION</h3>
+                <input type="text" placeholder="Payment Other Information ">
+                <input type="text" placeholder="Other Information">
+            <!-- </div> -->
+        </div>
+            <div class="box">
+                <h3>PAYMENT DETAILS</h3>
+                <p>CASH IN HANDS</p>
+                <input type="text" placeholder="Cash Narration">
+                <p>BANK ACCOUNT</p>
+                <input type="text" placeholder="Bank Narration">
+                <p>CARD PAYMENT</p>
+                <input type="text" placeholder="Card Narration">
+                <p>ONLINE PAYMENT</p>
+                <input type="text" placeholder="online Narration">
+               
+            </div>
+            <div class="box">
+                <h3>TIME PERIOD</h3>
+                <p>MONTHS</p>
+                <input type="number" placeholder="Months">
+                <p>Firm</p>
+                <input type="text" placeholder="Firm ">
+                <h3>DR ACCOUNT</h3>
+                <p>Secured Loans</p>
+                <input type="text" placeholder="Secured Loans ">
+                <p>LOAN ITEM LOCATION</p>
+                <input type="text" placeholder="DR Loan ">
+            </div>
+        </div>
+        <div class="button-container">
+            <button id="submit1">Submit</button>
+            <button id="submit2">Submit & Print</button>
+        </div>
+    </div>
+
+
+    <script src="loanPage.js"></script>
+</body>
+
+</html>

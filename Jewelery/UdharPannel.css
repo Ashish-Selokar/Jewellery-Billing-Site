@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+    background-color: #fdfcfb;
+    color: #333;
+}
+
+/* Header */
+.main-header {
+    background-color: #8e44ad;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 98%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.main-header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin: 0 1rem;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #f1c40f;
+}
+
+.navbar i {
+    margin: 5px;
+}
+
+
+
+.big-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;    
+    /* max-width: 1300px; */
+    margin: auto;
+    background: white;
+    /* padding: 45px; */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+
+
+.container h2 {
+    text-align: center;
+    background: #ff9800;
+    padding: 12px;
+    border-radius: 8px;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 15px;
+    width: 108%;
+}
+
+.btn {
+    display: block;
+    width: fit-content;
+    margin: 10px auto;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn.add-row {
+    background: #27ae60;
+}
+
+.btn.add-row:hover {
+    background: #219150;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: white;
+    overflow-x: auto;
+    min-width: 1000px;
+}
+
+thead {
+    background: #ff9800;
+    color: white;
+    font-size: 16px;
+    position: sticky;
+    top: 0;
+}
+
+th, td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+    min-width: 80px;
+}
+
+tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+input {
+    width: 100%;
+    padding: 2px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    background: #fff;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: 2px solid #ff9800;
+    background: #f8f8f8;
+}
+
+input[readonly] {
+    background: #eee;
+    font-weight: bold;
+}
+
+/* Specific column widths */
+th:nth-child(1), td:nth-child(1) { width: 50px; }  /* S.No */
+th:nth-child(2), td:nth-child(2) { width: 110px; } /* Date */
+th:nth-child(3), td:nth-child(3) { width: 120px; } /* Firm */
+th:nth-child(4), td:nth-child(4) { width: 120px; } /* Inv No */
+th:nth-child(5), td:nth-child(5) { width: 120px; } /* User Type */
+th:nth-child(6), td:nth-child(6) { width: 140px; } /* Customer Name */
+th:nth-child(7), td:nth-child(7) { width: 120px; } /* Mobile No */
+th:nth-child(8), td:nth-child(8) { width: 120px; } /* Udhaar Type */
+th:nth-child(9), td:nth-child(9) { width: 120px; } /* Transaction Type */
+th:nth-child(10), td:nth-child(10) { width: 110px; } /* Udhaar Amount */
+th:nth-child(11), td:nth-child(11) { width: 90px; } /* Cash */
+th:nth-child(12), td:nth-child(12) { width: 90px; } /* Bank */
+th:nth-child(13), td:nth-child(13) { width: 90px; } /* Cheque */
+th:nth-child(14), td:nth-child(14) { width: 90px; } /* Online */
+th:nth-child(15), td:nth-child(15) { width: 110px; } /* Deposit */
+th:nth-child(16), td:nth-child(16) { width: 110px; } /* Left Amount */
+
+
+
+.tableOfUdhar{
+    width: 100%;
+}
+
+
+
+.saveButton {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    width: 100%;
+}
+
+.saveButton button {
+    background: #27ae60;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}

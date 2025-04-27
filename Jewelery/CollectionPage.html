@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jewellery Collections</title>
+    <link rel="stylesheet" href="CollectioPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="logo">Jewellery Haven</div>
+        <nav class="navbar">
+            <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+            <a href="AboutPage.html"><i class="fa-solid fa-circle-info"></i>About</a>
+            <a href="CollectionPage.html"><i class="fa-solid fa-users"></i>Collections</a>
+            <a href="Orders.html"><i class="fa-solid fa-truck-fast"></i>Orders</a>
+            <a href=""><i class="fa-solid fa-location-dot"></i>Location</a>
+            <a href="Report.html">Reports</a>
+            <a href="BillingPage.html"> <i class="fa-solid fa-money-bill-1"></i>Proceed to Bill</a>
+            <a href=""><i class="fa-solid fa-address-card"></i></a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Our Exclusive Jewellery Collections</h1>
+            <p>Explore a wide range of elegant and timeless pieces to suit every occasion.</p>
+        </div>
+    </section>
+
+<div class="stock-ack">
+    <div class="stock-ack1">
+        <a href="">Fine Stock</a>
+        <a href="">Imitation Stock</a>
+        <a href="">Raw Material Stock</a>
+        <a href="">Crystal Stock</a>
+        <a href="">Stock Reports</a>
+        <a href="">Other options</a>
+    </div>
+
+    <div class="stock-ack2">
+        <h4>Add Jewellery Retail stock(Opening Stock)</h4>
+        <a href="">Wholesale Stock</a>
+        <a href="">Retail Stock</a>
+        <a href="">Help</a>
+    </div>
+
+    <div class="stock-ack3">
+        <div class="stock-ack-item">
+            <label>Bill Date</label>
+            <div class="inputs">
+                <input type="date" placeholder="DD">
+            </div>
+        </div>
+    
+        <div class="stock-ack-item">
+            <label>Firm</label>
+            <input type="text" placeholder="Shop">
+        </div>
+    
+        <div class="stock-ack-item">
+            <label>Metal/Rate</label>
+            <div class="inputs">
+                <input type="text" placeholder="Metal">
+                <input type="text" placeholder="Price">
+            </div>
+        </div>
+    
+        <div class="stock-ack-item">
+            <label>Product Code</label>
+            <input type="text" placeholder="Product Code">
+        </div>
+    
+        <div class="stock-ack-item">
+            <label>Counter No.</label>
+            <input type="text" placeholder="Counter No.">
+        </div>
+    
+        <div class="stock-ack-item">
+            <label for="">Jewelry Photo</label>
+            <input type="file" accept="image/*" class="file-input">
+        </div>
+    </div>
+
+</div>
+
+
+
+<div class="big-Table">
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>CATEGORY</th>
+                <th>NAME</th>
+                <th>QTY</th>
+                <th>GS WT</th>
+                <th>LESS WT</th>
+                <th>PKT WT</th>
+                <th>NT WT</th>
+                <th>TAG WT</th>
+                <th>PURITY</th>
+                <th>WST</th>
+                <th>F.PURITY</th>
+                <th>FN WT</th>
+                <th>CW</th>
+                <th>FFN WT</th>
+                <th>LBR CHRG</th>
+                <th>MKG CHRG</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <select class="stock-ack4">
+                        <option value="Ring" selected>Ring</option>
+                        <option value="Necklace">Necklace</option>
+                        <option value="Bracelet">Bracelet</option>
+                        <option value="Earrings">Earrings</option>
+                        <option value="Pendant">Pendant</option>
+                        <option value="Bangle">Bangle</option>
+                        <option value="Anklet">Anklet</option>
+                    </select>
+                </td>
+                <td><input type="text" class="stock-ack5" placeholder="gring"></td>
+                <td><input type="number" class="stock-ack6" placeholder="1"></td>
+                <td><input type="text" class="stock-ack7" placeholder="GS WT"></td>
+                <td><input type="text" class="stock-ack8" placeholder="LESS WT"></td>
+                <td><input type="text" class="stock-ack9" placeholder="PKT WT"></td>
+                <td><input type="text" class="stock-ack10" placeholder="NT WT"></td>
+                <td><input type="text" class="stock-ack11" placeholder="TAG WT"></td>
+                <td><input type="text" class="stock-ack12" placeholder="TUNCH"></td>
+                <td><input type="number" class="stock-ack13" placeholder="3"></td>
+                <td><input type="number" class="stock-ack14" placeholder="85.00"></td>
+                <td><input type="number" class="stock-ack15" placeholder="0.0000"></td>
+                <td><input type="number" class="stock-ack16" placeholder="0"></td>
+                <td><input type="number" class="stock-ack17" placeholder="0.0000"></td>
+                <td><input type="text" class="stock-ack18" placeholder="LAB CH"></td>
+                <td><input type="number" class="stock-ack19" placeholder="550 GM"></td>
+            </tr>
+            <tr>
+                <td><input type="text" class="stock-ack20" placeholder="7113"></td>
+                <td><input type="text" class="stock-ack21" placeholder="TOT HALLMARK CHRGS"></td>
+                <td><input type="text" class="stock-ack22" placeholder="OTHER INFO"></td>
+                <td><input type="text" class="stock-ack23" placeholder="MODEL NO"></td>
+                <td><input type="text" class="stock-ack24" placeholder="OTH CH"></td>
+                <td><input type="text" class="stock-ack25" placeholder="TOT OTH CH"></td>
+                <!-- <td colspan="3"><input type="text" class="stock-ack26" placeholder="DETAILS | STONE | ICON"></td> -->
+                <td><input type="text" class="stock-ack27" placeholder="VALUATION"></td>
+                <td><input type="text" class="stock-ack28" placeholder="TOT LAB"></td>
+                <td><input type="text" class="stock-ack29" placeholder="FINAL AMT"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+<div class="tableButton">
+    <button class="btn1">Add Stock</button>
+    <button class="btn2">Existing Item</button>
+    <button class="btn3 ">Hallmarking</button>
+    <button class="btn4">Help</button>
+</div>
+
+
+<div class="big-Table2">
+    <div class="table-container2">
+        <table>
+            <thead>
+                <tr>
+                    <th>ITEM ID</th>
+                    <th>METAL</th>
+                    <th>ITEM DET</th>
+                    <th>QTY</th>
+                    <th>GS WT</th>
+                    <th>NT WT</th>
+                    <th>PURITY</th>
+                    <th>CRY WT</th>
+                    <th>LBR CHRG</th>
+                    <th>OTH CHRG</th>
+                    <th>VAL</th>
+                    <th>TAX + OTHER CHGS</th>
+                    <th>TOTAL AMOUNT</th>
+                    <th>CRY VAL</th>
+                    <th>FINAL AMT</th>
+                    <th>ITEM MRP</th>
+                    <th>TAG NO.</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>    
+                    <td><input type="text" class="stock-ack4" placeholder="Ring"></td>
+                    <td><input type="text" class="stock-ack5" placeholder="gring"></td>
+                    <td><input type="number" class="stock-ack6" ></td>
+                    <td><input type="text" class="stock-ack7" ></td>
+                    <td><input type="text" class="stock-ack8" ></td>
+                    <td><input type="text" class="stock-ack9" ></td>
+                    <td><input type="text" class="stock-ack10"></td>
+                    <td><input type="text" class="stock-ack11" ></td>
+                    <td><input type="text" class="stock-ack12" ></td>
+                    <td><input type="number" class="stock-ack13" ></td>
+                    <td><input type="number" class="stock-ack14"></td>
+                    <td><input type="number" class="stock-ack15" ></td>
+                    <td><input type="number" class="stock-ack16" ></td>
+                    <td><input type="number" class="stock-ack17"></td>
+                    <td><input type="text" class="stock-ack18" ></td>
+                    <td><input type="number" class="stock-ack19" ></td>
+                </tr>
+                <tr>
+                    <td><input type="text" class="stock-ack20" ></td>
+                    <td><input type="text" class="stock-ack21" ></td>
+                    <td><input type="text" class="stock-ack22" ></td>
+                    <td><input type="text" class="stock-ack23" ></td>
+                    <td><input type="text" class="stock-ack24" ></td>
+                    <td><input type="text" class="stock-ack25" ></td>
+                    <!-- <td colspan="3"><input type="text" class="stock-ack26" placeholder="DETAILS | STONE | ICON"></td> -->
+                    <td><input type="text" class="stock-ack27" ></td>
+                    <td><input type="text" class="stock-ack28"></td>
+                    <td><input type="text" class="stock-ack29" ></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+
+    
+<div class="tableButton2">
+    <button>Save Product</button>
+</div>
+
+
+
+    <!-- Search Bar -->
+    <div class="search-container" data-aos="fade-up">
+        <input type="text" id="search-bar" placeholder="Search Collections..." oninput="filterCollections()">
+    </div>
+
+    <!-- Option Buttons (Gold, Silver, Platinum) -->
+    <div class="options-container" data-aos="fade-up">
+        <button class="option-btn" onclick="filterByOption('gold')">Gold</button>
+        <button class="option-btn" onclick="filterByOption('silver')">Silver</button>
+        <button class="option-btn" onclick="filterByOption('platinum')">Platinum</button>
+    </div>
+
+    <!-- Dynamic Results Section -->
+    <div id="results-container" data-aos="fade-up">
+        <p>Select a category or search to view results.</p>
+    </div>
+
+    <!-- Modal for Viewing Item Details -->
+    <div class="modal" data-aos="fade-up">
+        <div class="modal-content">
+            <!-- Content will be inserted dynamically by JavaScript -->
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Collections Section -->
+    <section class="collections-container" data-aos="fade-up">
+        <h2>Collections</h2>
+        <div class="collection-grid ">
+            <div class="collection-item" onclick="viewDetails('Gold Necklace')">
+                <img src="Images/NCK4897305PNG_01.png" alt="Gold Necklace" height="500px" width="600px">
+                <p>Gold Necklace</p>
+            </div>
+            <div class="collection-item" onclick="viewDetails('Diamond Earrings')">
+                <img src="images/top-view-sterling-silver-earrings-with-swarovski-crystal-with-studs-black-wall_140725-12952.avif"
+                    alt="Diamond Earrings" height="500px" width="600px">
+                <p>Diamond Earrings</p>
+            </div>
+            <div class="collection-item" onclick="viewDetails('Silver Bracelet')">
+                <img src="images/-473Wx593H-6006754620-multi-MODEL.avif" alt="Silver Bracelet" height="500px"
+                    width="600px">
+                <p>Silver Bracelet</p>
+            </div>
+            <div class="collection-item" onclick="viewDetails('Platinum Ring')">
+                <img src="images/466598.png" alt="Platinum Ring" height="500px" width="600px">
+                <p>Platinum Ring</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Modal for Details -->
+    <div class="modal" style="display: none;">
+        <div class="modal-content">
+            <!-- Content dynamically inserted by JS -->
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <p>&copy; 2024 Jewellery Haven. All rights reserved.</p>
+    </footer>
+
+    <script src="CollectionPage.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+
+           
+            duration: 2000,
+        });
+    </script>
+</body>
+
+</html>
