@@ -1,2 +1,5 @@
-# Jewellery-Billing-Site
-I have developed a jewellery billing system for shop owners. It lets them manage up to three stores, track stock, raw materials, sales, orders, deliveries, and employee attendance. The front-end is complete, and a full version with a robust backend is coming soon.
+I have developed a comprehensive Jewellery Billing System tailored specifically for shop owners. The platform allows management of up to three stores simultaneously, offering seamless tracking of stock, raw materials, and sales across daily, weekly, monthly, and yearly periods.
+Owners can effortlessly monitor current orders, pending deliveries, and even view live market rates of gold — all within a single, user-friendly dashboard.
+The system also features easy bill generation and employee attendance management, designed to simplify day-to-day operations with an intuitive, clean UI.
+
+Currently, the front-end development of the system is complete, and the back-end — engineered to be robust, scalable, and highly secure — is coming soon.
